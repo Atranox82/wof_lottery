@@ -31,3 +31,10 @@ dependencies {
     'vorp_inventory',
     'oxmysql'
 }
+
+-- Escrow: only config stays open / editable
+escrow_ignore {
+    'config.lua',
+    'sql/*.sql',
+    'README.md'
+}
