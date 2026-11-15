@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>World of Freedom - Lotterie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lottery-container" class="hidden">
+        <div class="lottery-frame">
+            <div class="header">
+                <div class="title">LOTTERIE</div>
+                <div class="subtitle">World of Freedom</div>
+            </div>
+
+            <div class="content">
+                <div class="jackpot-section">
+                    <div class="label">Aktueller Jackpot</div>
+                    <div class="jackpot" id="jackpot">$50.00</div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="label">Nächste Ziehung</div>
+                        <div class="value" id="drawTime">17:00 Uhr</div>
+                    </div>
+                    <div class="info-box">
+                        <div class="label">Deine Lose</div>
+                        <div class="value" id="myTickets">0 / 10</div>
+                    </div>
+                    <div class="info-box">
+                        <div class="label">Los Preis</div>
+                        <div class="value" id="ticketPrice">$5.00</div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn buy" onclick="buyTicket()">Los kaufen</button>
+                    <button class="btn claim" onclick="claimWinnings()">Gewinn abholen</button>
+                    <button class="btn close" onclick="closeUI()">Schließen</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                Tägliche Ziehung um 17:00 Uhr • Viel Glück!
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
